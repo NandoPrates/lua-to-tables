@@ -1,3 +1,5 @@
+Dirty scipts to convert lua files to OpenKore tables
+
 # skillinfolist.pl
 
 Converts skillinfolist.lua (decompiled from skillinfolist.lub) to Openkore's skillnametable.txt and skillssp.txt.
@@ -6,5 +8,9 @@ Converts skillinfolist.lua (decompiled from skillinfolist.lub) to Openkore's ski
 
 Converts skilldescript.lua (decompiled from skilldescript.lub) to Openkore's skillsdescriptions.txt
 
+# stateiconinfo.pl
 
-Both scripts were based off bRO's files.
+Converts stateiconinfo.lua (decompiled from stateiconinfo.lub) to Openkore's statusnametable.txt
+
+
+Scripts were based on bRO's files.

@@ -13,15 +13,12 @@ my (@handle,@name,@spamount);
 open(T, "<", $targetFile);
 
 while (my $T = <T>) {
-	if ($T =~ /^[ \t]*\[(\[)?.*(\])?\] = {"(.*?)";[ \t]*SkillName[ \t]*=[ \t]*"(.*?)",/){
+	if ($T =~ /^[ \t]*\[(\[)?.*(\])?\] = \{"(.*?)";[ \t]*SkillName[ \t]*=[ \t]*"(.*?)",/){
 		push(@handle,$3);
 		push(@name,$4);
 	} elsif ($T =~ /^[ \t]*SpAmount[ \t]*=[ \t]*{(.*)}/) {
 		push(@spamount,$1);
 	}
-	
-	last if eof;
-	next;
 }
 
 open(O, ">:encoding(UTF-8)", "skillnametable.txt");

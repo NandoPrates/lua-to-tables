@@ -17,9 +17,6 @@ while (my $T = <T>) {
 		push(@handle,$1);
 		push(@desc,$2);
 	}
-
-	last if eof;
-	next;
 }
 
 open(O, ">:encoding(UTF-8)", "skillsdescriptions.txt");
